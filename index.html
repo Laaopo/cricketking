@@ -1,46 +1,302 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Cricket King - The premium offline-first cricket scoring app. Learn how we secure your data locally without tracking.">
+    <title>Privacy Policy | Cricket King</title>
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --surface-color: rgba(17, 24, 39, 0.7);
+            --border-color: rgba(16, 185, 129, 0.2);
+            --primary: #10b981; /* Neon Emerald Green */
+            --primary-glow: rgba(16, 185, 129, 0.4);
+            --secondary: #d97706; /* Golden Accent */
+            --secondary-glow: rgba(217, 119, 6, 0.3);
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --card-glow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
 
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(16, 185, 129, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(217, 119, 6, 0.05) 0%, transparent 40%);
+            background-attachment: fixed;
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+        }
 
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="$FLUTTER_BASE_HREF">
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+        /* Glassmorphism Header */
+        header {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            padding: 2rem;
+            background: var(--surface-color);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--card-glow);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
 
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="cricket_king">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+        header:hover {
+            transform: translateY(-2px);
+            border-color: rgba(16, 185, 129, 0.4);
+        }
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 0.5rem;
+        }
 
-  <title>cricket_king</title>
-  <link rel="manifest" href="manifest.json">
+        .logo-crown {
+            font-size: 2.2rem;
+            color: var(--secondary);
+            text-shadow: 0 0 10px var(--secondary-glow);
+            animation: pulse 2s infinite ease-in-out;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.2rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, #ffffff 30%, #10b981 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+
+        /* Main Content Glassmorphism Card */
+        main {
+            background: var(--surface-color);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 3rem 2.5rem;
+            box-shadow: var(--card-glow);
+        }
+
+        .last-updated {
+            font-size: 0.85rem;
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: inline-block;
+            padding: 4px 12px;
+            background: rgba(16, 185, 129, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(16, 185, 129, 0.2);
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        section:last-of-type {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.5rem;
+        }
+
+        h2::before {
+            content: "";
+            display: inline-block;
+            width: 6px;
+            height: 18px;
+            background: var(--primary);
+            border-radius: 3px;
+            box-shadow: 0 0 8px var(--primary-glow);
+        }
+
+        p {
+            color: var(--text-muted);
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+
+        ul {
+            list-style: none;
+            margin-bottom: 1.2rem;
+            padding-left: 0.5rem;
+        }
+
+        li {
+            color: var(--text-muted);
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.6rem;
+            font-size: 0.98rem;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: bold;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        .email-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: text-shadow 0.3s ease, color 0.3s ease;
+        }
+
+        .email-link:hover {
+            color: #34d399;
+            text-shadow: 0 0 10px rgba(52, 211, 153, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 3rem;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 1rem 0.5rem;
+            }
+
+            main {
+                padding: 2rem 1.5rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
+    <div class="container">
+        <header id="policy-header">
+            <div class="logo-container">
+                <span class="logo-crown">👑</span>
+                <h1>Cricket King</h1>
+            </div>
+            <p class="subtitle">Scoring App Privacy Policy</p>
+        </header>
 
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
-  <script src="flutter_bootstrap.js" async></script>
+        <main id="policy-body">
+            <span class="last-updated">Last Updated: June 13, 2026</span>
+
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>Welcome to <strong>Cricket King</strong>. We respect your privacy and are committed to protecting the integrity of your cricket scoring data. This Privacy Policy details how we handle user data. Our core philosophy is simple: <strong>your cricket data belongs to you.</strong></p>
+            </section>
+
+            <section id="offline-first-data">
+                <h2>100% Offline Data Storage</h2>
+                <p>Cricket King is built as an offline-first application. To ensure reliable operations on local cricket pitches and remote leagues, all match scorecards, player statistics, and database entries are stored locally on your device:</p>
+                <ul>
+                    <li>No registration or accounts are required to use the scoring features.</li>
+                    <li>Your match data is saved securely using a local SQLite database on your device's sandbox.</li>
+                    <li>Automatic disaster recovery backups are saved locally as JSON files on your device.</li>
+                </ul>
+            </section>
+
+            <section id="data-collection">
+                <h2>Information We Collect</h2>
+                <p>We do not collect, store, transmit, or share any personal identifying information (PII) or device identifier data. All information you input into the app stays strictly within the application boundaries on your physical device:</p>
+                <ul>
+                    <li><strong>Match details</strong>: Scores, runs, overs, dismissals, and extras.</li>
+                    <li><strong>Player Profiles</strong>: Batting and bowling statistics, career milestones, names, and profiles.</li>
+                    <li><strong>Calculations</strong>: Team stats and Duckworth-Lewis-Stern (DLS) mathematical configurations.</li>
+                </ul>
+            </section>
+
+            <section id="third-party-services">
+                <h2>Third-Party Services</h2>
+                <p>Our application uses standard Android and iOS system components to operate, but does not embed third-party advertising SDKs or analytical trackers. The app runs free of external tracking components, giving you a smooth and clean experience.</p>
+            </section>
+
+            <section id="pdf-csv-sharing">
+                <h2>Data Export & Sharing</h2>
+                <p>When you use the PDF scorecard printing or CSV/Excel sharing features, the files are generated locally on your device's filesystem. They are only shared when you explicitly trigger the system share sheet (e.g., sending a scorecard to a league WhatsApp group or emailing the PDF score sheet).</p>
+            </section>
+
+            <section id="policy-updates">
+                <h2>Changes to This Policy</h2>
+                <p>We may update our Privacy Policy from time to time. Since we do not collect your contact details, we encourage you to review this page periodically within the app's website for any changes. Changes are effective immediately upon publishing.</p>
+            </section>
+
+            <section id="contact-info">
+                <h2>Contact Us</h2>
+                <p>If you have any questions or suggestions regarding this Privacy Policy, please feel free to reach out to us:</p>
+                <div class="contact-box">
+                    <p>Email support:</p>
+                    <a href="mailto:support@cricketking.app" id="email-support" class="email-link">support@cricketking.app</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Cricket King. All Rights Reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
+
